@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=gstreamer? ( net-libs/webkit-gtk[gstreamer] media-libs/gst-plugins-good media-plugins/gst-plugins-libav ) !gstreamer? ( net-libs/webkit-gtk ) x11-libs/gtk+:3 adblock? ( www-plugins/wyebadblock )
+DESCRIPTION=a fast, lightweight, vim-like browser based on webkit
+EAPI=7
+HOMEPAGE=http://fanglingsu.github.io/vimb/
+IUSE=gstreamer adblock savedconfig
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=gstreamer? ( net-libs/webkit-gtk[gstreamer] media-libs/gst-plugins-good media-plugins/gst-plugins-libav ) !gstreamer? ( net-libs/webkit-gtk ) x11-libs/gtk+:3 adblock? ( www-plugins/wyebadblock ) virtual/pkgconfig
+SLOT=0
+SRC_URI=https://github.com/fanglingsu/vimb/archive/3.6.0.tar.gz -> vimb-3.6.0.tar.gz
+_eclasses_=desktop	8f9bfcc33705104f56748d9dedb3177a	portability	ef17692c89618f4fb47984b1186bb484	savedconfig	0bc45cb0429003c9abc73bae24a0d5bd	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=14b10266e0c55e42685ad847a341f439

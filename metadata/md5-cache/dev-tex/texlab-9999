@@ -1,0 +1,13 @@
+BDEPEND=>=virtual/rust-1.37.0 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=>=dev-lang/rust-1.39.0
+DESCRIPTION=LaTeX Language Server
+EAPI=7
+HOMEPAGE=https://texlab.netlify.app
+IUSE=debug
+LICENSE=Apache-2.0 Apache-2.0 WITH LLVM-exception BSD-2-Clause BSD-3-Clause BSL-1.0 CC0-1.0 GPL-3.0 GPL-3.0+ ISC MIT MPL-2.0 Unlicense Zlib
+PROPERTIES=live
+RESTRICT=mirror
+SLOT=0
+_eclasses_=cargo	bd8499d18174b7d9e84e56a022ccd236	git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
+_md5_=c09484c8351d494acf6643190bd9eecc
