@@ -1,3 +1,4 @@
+app-misc/lf 17: a terminal file manager written in Go
 dev-tex/texlab 9999: LaTeX Language Server
 dev-util/rust-analyzer 20201214 20201228 99999999: An experimental Rust compiler front-end for IDEs
 gui-apps/wofi 1.2.3 9999: Wofi is a launcher/menu program for wlroots based wayland compositors such as sway
