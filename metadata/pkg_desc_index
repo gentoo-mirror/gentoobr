@@ -1,10 +1,9 @@
 app-misc/lf 17: a terminal file manager written in Go
-dev-python/deemix 2.0.11: deemix is a deezer downloader built from the ashes of Deezloader Remix.
-dev-python/deezer-py 0.0.13: A wrapper for all Deezer's APIs
-dev-python/spotipy 2.16.1: A light weight Python library for the Spotify Web API
+dev-python/deemix 2.0.11 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
+dev-python/deezer-py 0.0.13 0.0.14 9999: A wrapper for all Deezer's APIs
+dev-python/spotipy 2.16.1 9999: A light weight Python library for the Spotify Web API
 dev-tex/texlab 9999: LaTeX Language Server
 dev-util/rust-analyzer 20201228 20210104 99999999: An experimental Rust compiler front-end for IDEs
 gui-apps/wofi 1.2.3 9999: Wofi is a launcher/menu program for wlroots based wayland compositors such as sway
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-plugins/wyebadblock 9999: An adblock extension for wyeb, also webkit2gtk browsers.
-x11-apps/hsetroot 1.0.5: yet another wallpaper application
