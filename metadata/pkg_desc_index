@@ -7,3 +7,4 @@ dev-util/rust-analyzer 20201228 20210104 99999999: An experimental Rust compiler
 gui-apps/wofi 1.2.3 9999: Wofi is a launcher/menu program for wlroots based wayland compositors such as sway
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-plugins/wyebadblock 9999: An adblock extension for wyeb, also webkit2gtk browsers.
+x11-misc/devour 12 9999: X11 window swallower

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install prepare
+DEPEND=x11-libs/libX11
+DESCRIPTION=X11 window swallower
+EAPI=7
+HOMEPAGE=https://github.com/salman-abedin/devour
+KEYWORDS=~amd64 ~x64
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11
+SLOT=0
+SRC_URI=https://github.com/salman-abedin/devour/archive/12.tar.gz -> devour-12.tar.gz
+_md5_=09e62b07dcb79d81e653badd522d1778

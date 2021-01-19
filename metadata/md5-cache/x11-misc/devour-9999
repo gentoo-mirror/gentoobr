@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install prepare unpack
+DEPEND=x11-libs/libX11
+DESCRIPTION=X11 window swallower
+EAPI=7
+HOMEPAGE=https://github.com/salman-abedin/devour
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=x11-libs/libX11
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=59ce82b48bc30e50d541951b3a51510d
