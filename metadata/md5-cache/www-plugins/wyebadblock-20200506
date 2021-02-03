@@ -4,6 +4,7 @@ DEPEND=x11-libs/gtk+:3 net-libs/webkit-gtk
 DESCRIPTION=An adblock extension for wyeb, also webkit2gtk browsers.
 EAPI=7
 HOMEPAGE=https://github.com/jun7/wyebadblock
+KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=x11-libs/gtk+:3 net-libs/webkit-gtk
