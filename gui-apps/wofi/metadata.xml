@@ -10,6 +10,5 @@
 	</longdescription>
 	<upstream>
 		<doc>https://cloudninja.pw/docs/wofi.html</doc>
-		<remote-id type="sourcehut">scoopta/wofi</remote-id>
 	</upstream>
 </pkgmetadata>
