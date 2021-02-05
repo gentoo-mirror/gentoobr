@@ -3,5 +3,6 @@
 # * generated automatically using pmaint *
 
 app-misc/lf:fish-completion - Installs completion for fish
+dev-libs/fcft:harfbuzz - Enables text shaping via media-libs/harfbuzz
 www-client/vimb:adblock - Use www-plugins/wyebadblock for ad blocking
 www-client/vimb:gstreamer - Add support for media-libs/gstreamer (Streaming media)

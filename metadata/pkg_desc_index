@@ -1,6 +1,7 @@
 app-misc/gscreenshot 2.13.0: A simple GUI frontend for the scrot, imlib2, or ImageMagick screenshooters
 app-misc/lf 17: a terminal file manager written in Go
 app-misc/pfetch 0.6.0 9999: A pretty system information tool written in POSIX sh.
+dev-libs/fcft 2.3.2 9999: A simple library for font loading and glyph rasterization
 dev-libs/tllist 1.0.4 9999: A C header file only implementation of a typed linked list
 dev-python/deemix 2.0.11 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
 dev-python/deezer-py 0.0.13 0.0.14 9999: A wrapper for all Deezer's APIs
