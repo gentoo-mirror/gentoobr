@@ -21,16 +21,19 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="+harfbuzz static-libs"
 
-DEPEND="
-	>=dev-libs/tllist-1.0.1
+RDEPEND="
 	media-libs/fontconfig
 	media-libs/freetype
 	harfbuzz? ( media-libs/harfbuzz )
 	x11-libs/pixman
 "
-RDEPEND="${DEPEND}"
+DEPEND="
+	${RDEPEND}
+	>=dev-libs/tllist-1.0.1
+"
 BDEPEND="
 	app-text/scdoc
+	>=dev-util/meson-0.54.0
 	virtual/pkgconfig
 "
 
@@ -38,6 +41,7 @@ src_configure() {
 	local emesonargs=(
 		-Ddefault_library=$(usex static-libs both shared)
 		$(meson_feature harfbuzz text-shaping)
+		-Dwerror=false
 	)
 	meson_src_configure
 }
