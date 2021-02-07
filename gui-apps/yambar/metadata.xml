@@ -3,12 +3,13 @@
 <pkgmetadata>
 	<maintainer type="person">
 		<email>leonardohn@null.net</email>
-		<name>Leonardo Neumann</name>
+		<name>Leonardo H. Neumann</name>
 	</maintainer>
 	<longdescription lang="en">
-		A launcher/menu program for wlroots based wayland compositors
+		Simplistic and highly configurable status panel for X and Wayland
 	</longdescription>
 	<upstream>
-		<doc>https://cloudninja.pw/docs/wofi.html</doc>
+		<bugs-to>https://codeberg.org/dnkl/yambar/issues</bugs-to>
+		<changelog>https://codeberg.org/dnkl/yambar/releases</changelog>
 	</upstream>
 </pkgmetadata>
