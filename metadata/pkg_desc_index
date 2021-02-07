@@ -7,7 +7,8 @@ dev-python/deemix 2.0.11 9999: deemix is a deezer downloader built from the ashe
 dev-python/deezer-py 0.0.13 0.0.14 9999: A wrapper for all Deezer's APIs
 dev-python/spotipy 2.16.1 9999: A light weight Python library for the Spotify Web API
 dev-util/rust-analyzer 20210125 99999999: An experimental Rust compiler front-end for IDEs
-gui-apps/wofi 1.2.3 9999: Wofi is a launcher/menu program for wlroots based wayland compositors such as sway
+gui-apps/wofi 1.2.3 9999: A launcher/menu program for wlroots based wayland compositors
+gui-apps/yambar 1.6.1 9999: Simplistic and highly configurable status panel for X and Wayland
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-plugins/wyebadblock 9999 20200506: An adblock extension for wyeb, also webkit2gtk browsers.
 x11-misc/devour 12 9999: X11 window swallower
