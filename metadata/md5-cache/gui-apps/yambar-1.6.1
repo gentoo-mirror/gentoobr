@@ -1,15 +1,15 @@
-BDEPEND=app-text/scdoc >=dev-util/meson-0.53.0 virtual/pkgconfig >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+BDEPEND=app-text/scdoc >=dev-util/meson-0.53.0 virtual/pkgconfig wayland? ( dev-libs/wayland-protocols dev-util/wayland-scanner ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install test
-DEPEND==dev-libs/fcft-2* dev-libs/json-c dev-libs/libyaml media-libs/alsa-lib media-libs/libmpdclient virtual/libudev:= x11-libs/pixman wayland? ( dev-libs/wayland ) X? ( x11-libs/libxcb:0= x11-libs/xcb-util x11-libs/xcb-util-cursor x11-libs/xcb-util-wm ) >=dev-libs/tllist-1.0.1
+DEPEND==dev-libs/fcft-2* dev-libs/json-c dev-libs/libyaml media-libs/alsa-lib media-libs/libmpdclient virtual/libudev:= x11-libs/pixman wayland? ( dev-libs/wayland ) X? ( x11-libs/libxcb:0=[xkb] x11-libs/xcb-util x11-libs/xcb-util-cursor x11-libs/xcb-util-wm ) >=dev-libs/tllist-1.0.1
 DESCRIPTION=Simplistic and highly configurable status panel for X and Wayland
 EAPI=7
 HOMEPAGE=https://codeberg.org/dnkl/yambar
 IUSE=wayland X
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND==dev-libs/fcft-2* dev-libs/json-c dev-libs/libyaml media-libs/alsa-lib media-libs/libmpdclient virtual/libudev:= x11-libs/pixman wayland? ( dev-libs/wayland ) X? ( x11-libs/libxcb:0= x11-libs/xcb-util x11-libs/xcb-util-cursor x11-libs/xcb-util-wm )
+RDEPEND==dev-libs/fcft-2* dev-libs/json-c dev-libs/libyaml media-libs/alsa-lib media-libs/libmpdclient virtual/libudev:= x11-libs/pixman wayland? ( dev-libs/wayland ) X? ( x11-libs/libxcb:0=[xkb] x11-libs/xcb-util x11-libs/xcb-util-cursor x11-libs/xcb-util-wm )
 REQUIRED_USE=|| ( wayland X )
 SLOT=0
 SRC_URI=https://codeberg.org/dnkl/yambar/archive/1.6.1.tar.gz -> yambar-1.6.1.tar.gz
 _eclasses_=meson	fdaf2a7b9376934c1c7ddbd32114defb	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	python-utils-r1	69861348186337fa4b269de5826004b3	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
-_md5_=086d8eace141d2861a8994ed866a0489
+_md5_=774e87ffe02b74fa46cb18bb1901a7eb
