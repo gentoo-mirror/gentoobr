@@ -5,7 +5,7 @@ dev-libs/fcft 2.3.2 9999: A simple library for font loading and glyph rasterizat
 dev-libs/tllist 1.0.4 9999: A C header file only implementation of a typed linked list
 dev-python/deezer-py 0.0.14 0.0.15 9999: A wrapper for all Deezer's APIs
 dev-python/spotipy 2.16.1 9999: A light weight Python library for the Spotify Web API
-dev-util/rust-analyzer 20210222 99999999: An experimental Rust compiler front-end for IDEs
+dev-util/rust-analyzer 20210301 99999999: An experimental Rust compiler front-end for IDEs
 gui-apps/wofi 1.2.3 9999: A launcher/menu program for wlroots based wayland compositors
 gui-apps/yambar 1.6.1 9999: Simplistic and highly configurable status panel for X and Wayland
 net-misc/deemix 2.0.11 2.0.16 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
