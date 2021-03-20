@@ -3,12 +3,13 @@ DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=>=dev-python/spotipy-2.11.0 dev-python/deezer-py dev-python/requests dev-python/pycryptodome dev-python/eventlet dev-python/click media-libs/mutagen
 DESCRIPTION=deemix is a deezer downloader built from the ashes of Deezloader Remix.
 EAPI=7
-HOMEPAGE=https://git.rip/RemixDev/deemix
+HOMEPAGE=https://git.freezer.life/RemixDev/deemix
+INHERIT=distutils-r1 git-r3
 IUSE=python_targets_python3_8
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=>=dev-python/spotipy-2.11.0 dev-python/deezer-py dev-python/requests dev-python/pycryptodome dev-python/eventlet dev-python/click media-libs/mutagen python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_8(-)?,-python_single_target_python3_8(-)]
 REQUIRED_USE=|| ( python_targets_python3_8 )
 SLOT=0
-_eclasses_=distutils-r1	16579e06f8839831bd5c03455bb87e3f	git-r3	3e7ec3d6619213460c85e2aa48398441	multibuild	6b3d5ee849dafe6cdfd7b859c211fb01	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-r1	6d099888c5b4dd4868c26508df307e95	python-utils-r1	2dc8e06a3429719b43e9140f7292a425	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
-_md5_=0d8df3df01c713fc3d8e6a9672c6163c
+_eclasses_=multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	multibuild	6b3d5ee849dafe6cdfd7b859c211fb01	python-utils-r1	2dc8e06a3429719b43e9140f7292a425	python-r1	6d099888c5b4dd4868c26508df307e95	distutils-r1	16579e06f8839831bd5c03455bb87e3f	git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=fe91b3c40897bc65c83f15b951038d20
