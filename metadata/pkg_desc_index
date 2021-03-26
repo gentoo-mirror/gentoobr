@@ -1,6 +1,4 @@
 app-misc/gscreenshot 2.13.0: A simple GUI frontend for the scrot, imlib2, or ImageMagick screenshooters
-app-misc/lf 17: a terminal file manager written in Go
-app-misc/pfetch 0.6.0 9999: A pretty system information tool written in POSIX sh.
 dev-libs/tllist 1.0.5 9999: A C header file only implementation of a typed linked list
 dev-python/deezer-py 0.0.14 0.0.15 9999: A wrapper for all Deezer's APIs
 dev-python/spotipy 2.16.1 2.17.1 9999: A light weight Python library for the Spotify Web API
