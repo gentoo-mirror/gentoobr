@@ -2,7 +2,7 @@ app-misc/gscreenshot 2.13.0: A simple GUI frontend for the scrot, imlib2, or Ima
 dev-libs/tllist 1.0.5 9999: A C header file only implementation of a typed linked list
 dev-python/deezer-py 0.0.14 0.0.15 9999: A wrapper for all Deezer's APIs
 dev-python/spotipy 2.16.1 2.17.1 9999: A light weight Python library for the Spotify Web API
-dev-util/rust-analyzer 20210315 99999999: An experimental Rust compiler front-end for IDEs
+dev-util/rust-analyzer 20210329 99999999: An experimental Rust compiler front-end for IDEs
 gui-apps/yambar 1.6.1 9999: Simplistic and highly configurable status panel for X and Wayland
 media-libs/fcft 2.3.2 9999: A simple library for font loading and glyph rasterization
 net-misc/deemix-py 2.0.16 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
