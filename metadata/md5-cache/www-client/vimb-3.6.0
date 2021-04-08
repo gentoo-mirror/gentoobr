@@ -11,4 +11,4 @@ RDEPEND=gstreamer? ( net-libs/webkit-gtk[gstreamer] media-libs/gst-plugins-good 
 SLOT=0
 SRC_URI=https://github.com/fanglingsu/vimb/archive/3.6.0.tar.gz -> vimb-3.6.0.tar.gz
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	xdg-utils	ff2ff954e6b17929574eee4efc5152ba	portability	c10bdc40668533b1faf15b1d89df0303	savedconfig	0bc45cb0429003c9abc73bae24a0d5bd
-_md5_=cff6c5cfcbb841fb8123cbd292061e8f
+_md5_=696929353fe113f8f9c62f4f32b71256
