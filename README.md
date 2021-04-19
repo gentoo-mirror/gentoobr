@@ -39,7 +39,13 @@ location = /var/db/repos/gentoobr
 Please follow the guidelines below when submitting a pull request:
 
 * Use `repoman` to create and verify commits;
-* Commits must be signed (preferably following ![GLEP 63][glep63]);
-* Use the following commit name convention: `category/package: What changed`;
+* Commits must be signed (preferably following [GLEP 63][glep63]);
+
+Also, use the following name convention for commits in the overlay:
+
+* To add a package: `category/package: +`;
+* To remove a package: `category/package: -`;
+* To bump/update a package: `category/package: New version`;
+* To change something else: `category/package: What changed`;
 
 [glep63]: https://www.gentoo.org/glep/glep-0063.html
