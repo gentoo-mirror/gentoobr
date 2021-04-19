@@ -8,4 +8,5 @@ media-libs/fcft 2.3.2 9999: A simple library for font loading and glyph rasteriz
 net-misc/deemix-py 2.0.16 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-plugins/wyebadblock 9999 20200506: An adblock extension for wyeb, also webkit2gtk browsers.
+x11-apps/sx 2.1.6 9999: Start an xorg server
 x11-misc/devour 12 9999: X11 window swallower
