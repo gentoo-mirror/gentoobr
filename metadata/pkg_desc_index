@@ -7,7 +7,7 @@ dev-util/rust-analyzer 20210517 20210524 99999999: An experimental Rust compiler
 gui-apps/yambar 1.6.1 9999: Simplistic and highly configurable status panel for X and Wayland
 media-libs/fcft 2.3.3 9999: A simple library for font loading and glyph rasterization
 net-misc/deemix-py 2.0.16 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
-sys-kernel/clear-sources 5.12.3 5.12.4-r1 5.12.5 5.12.6: Clear Linux sources
+sys-kernel/clear-sources 5.12.5 5.12.6 5.12.7: Clear Linux sources
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-plugins/wyebadblock 9999 20200506: An adblock extension for wyeb, also webkit2gtk browsers.
 x11-apps/sx 2.1.6 9999: Start an xorg server
