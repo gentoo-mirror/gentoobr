@@ -1,5 +1,5 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install postinst postrm prepare unpack
+DEFINED_PHASES=install postinst postrm prepare unpack
 DEPEND=gstreamer? ( net-libs/webkit-gtk[gstreamer] media-libs/gst-plugins-good media-plugins/gst-plugins-libav ) !gstreamer? ( net-libs/webkit-gtk ) x11-libs/gtk+:3 adblock? ( www-plugins/wyebadblock ) virtual/pkgconfig
 DESCRIPTION=a fast, lightweight, vim-like browser based on webkit
 EAPI=7
@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=gstreamer? ( net-libs/webkit-gtk[gstreamer] media-libs/gst-plugins-good media-plugins/gst-plugins-libav ) !gstreamer? ( net-libs/webkit-gtk ) x11-libs/gtk+:3 adblock? ( www-plugins/wyebadblock )
 SLOT=0
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	xdg-utils	ff2ff954e6b17929574eee4efc5152ba	portability	c10bdc40668533b1faf15b1d89df0303	savedconfig	0bc45cb0429003c9abc73bae24a0d5bd	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
-_md5_=696929353fe113f8f9c62f4f32b71256
+_md5_=af575b347018d0ff4d7d3d0bad027321
