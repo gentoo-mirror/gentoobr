@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_8 )
+PYTHON_COMPAT=( python3_{8,9} )
 inherit distutils-r1
 
 COMMIT="67fcb7d37f0cd24564b7ff2738cd5e69551edc6d"
@@ -17,7 +17,7 @@ if [[ ${PV} = *9999* ]]; then
 else
 	SRC_URI="https://git.freezer.life/RemixDev/${PN}/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~x86"
-	S="${WORKDIR}/${COMMIT}"
+	S="${WORKDIR}/${PN}"
 fi
 
 LICENSE="GPL-3"
@@ -44,4 +44,9 @@ python_prepare(){
 	# it is also imported using Crypto.
 	sed -i 's/Cryptodome/Crypto/' deemix/app/downloadjob.py
 	sed -i 's/Cryptodome/Crypto/' deemix/utils/decryption.py
+}
+
+pkg_postinst(){
+	ewarn "Please notice that deemix-py will not work with deezer-py-9999"
+	ewarn "Make sure to install deezer-py version 0.0.15 or earlier."
 }
