@@ -3,7 +3,7 @@ dev-python/deezer-py 0.0.14 0.0.15 9999: A wrapper for all Deezer's APIs
 dev-python/spotipy 2.17.1 2.18.0 9999: A light weight Python library for the Spotify Web API
 dev-util/rust-analyzer 20210705 20210712 99999999: An experimental Rust compiler front-end for IDEs
 net-misc/deemix-py 2.0.16 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
-sys-kernel/clear-sources 5.12.5 5.12.6 5.12.7 5.12.8 5.12.10 5.12.11 5.12.12 5.12.13 5.12.14: Clear Linux sources
+sys-kernel/clear-sources 5.12.5 5.12.6 5.12.7 5.12.8 5.12.10 5.12.11 5.12.12 5.12.13 5.12.14 5.12.16: Clear Linux sources
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-plugins/wyebadblock 9999 20200506: An adblock extension for wyeb, also webkit2gtk browsers.
 x11-apps/sx 2.1.6 9999: Start an xorg server
