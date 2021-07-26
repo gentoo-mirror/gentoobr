@@ -1,7 +1,7 @@
 app-text/smu 1.5 9999: simple markup - markdown like syntax
 dev-python/deezer-py 0.0.15 1.0.0 9999: A wrapper for all Deezer's APIs
 dev-python/spotipy 2.17.1 2.18.0 9999: A light weight Python library for the Spotify Web API
-dev-util/rust-analyzer 20210712 20210719 99999999: An experimental Rust compiler front-end for IDEs
+dev-util/rust-analyzer 20210719 20210726 99999999: An experimental Rust compiler front-end for IDEs
 net-misc/deemix-py 2.0.16 3.0.4 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
 sys-kernel/clear-sources 5.12.5 5.12.6 5.12.7 5.12.8 5.12.10 5.12.11 5.12.12 5.12.13 5.12.14 5.12.16: Clear Linux sources
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
