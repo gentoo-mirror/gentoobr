@@ -2,6 +2,11 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+media-sound/spotifyd:alsa - Enables the alsa backend
+media-sound/spotifyd:dbus - Enables multimedia key integration and keyring support
+media-sound/spotifyd:portaudio - Enables the pulseaudio backend
+media-sound/spotifyd:pulseaudio - Enables the pulseaudio backend
+media-sound/spotifyd:systemd - Installs a .service file to /etc/systemd/user/
 sys-kernel/clear-sources:experimental - Apply experimental patches; for more information, see "https://wiki.gentoo.org/wiki/Project:Kernel/Experimental".
 www-client/vimb:adblock - Use www-plugins/wyebadblock for ad blocking
 www-client/vimb:gstreamer - Add support for media-libs/gstreamer (Streaming media)
