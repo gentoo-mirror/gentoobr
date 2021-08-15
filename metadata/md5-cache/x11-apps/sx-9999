@@ -2,7 +2,7 @@ BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install unpack
 DEPEND=x11-apps/xauth x11-base/xorg-server[xorg]
 DESCRIPTION=Start an xorg server
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/Earnestly/sx
 INHERIT=git-r3
 LICENSE=MIT
@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=x11-apps/xauth x11-base/xorg-server[xorg]
 SLOT=0
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=0ae7fd71cd6f2a2ef41ee371d59fbb65
+_md5_=eef75057b093ebcd352dc5debba7389a

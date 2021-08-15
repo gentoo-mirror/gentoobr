@@ -2,7 +2,7 @@ BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=unpack
 DEPEND=x11-libs/gtk+:3 net-libs/webkit-gtk
 DESCRIPTION=An adblock extension for wyeb, also webkit2gtk browsers.
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/jun7/wyebadblock
 INHERIT=git-r3
 LICENSE=GPL-3
@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=x11-libs/gtk+:3 net-libs/webkit-gtk
 SLOT=0
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=69738e33b521feeea9aaf5e2921b9e28
+_md5_=b88f50fdda61bdb92ec34c205a3a1749
