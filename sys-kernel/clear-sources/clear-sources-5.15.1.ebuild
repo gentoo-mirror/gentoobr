@@ -5,8 +5,8 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="16"
-CLEAR_VER="${PV}-1071"
+K_GENPATCHES_VER="3"
+CLEAR_VER="${PV}-1089"
 
 inherit kernel-2
 detect_version
@@ -21,7 +21,15 @@ CLEAR_URI="https://github.com/clearlinux-pkgs/linux/archive/refs/tags/${CLEAR_VE
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${CLEAR_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/${CLEAR_VER}.tar.gz"
-UNIPATCH_EXCLUDE="archive/* ${UNIPATCH_EXCLUDE}"
+
+UNIPATCH_EXCLUDE="
+	archive/*
+	0113-print-fsync-count-for-bootchart.patch
+	0125-x86-microcode-echo-2-reload-to-force-load-ucode.patch
+	0127-nvme-workaround.patch
+	${UNIPATCH_EXCLUDE}
+"
+
 UNIPATCH_STRICTORDER="yes"
 
 pkg_postinst() {
