@@ -8,7 +8,7 @@ media-sound/spotifyd:portaudio - Enables the pulseaudio backend
 media-sound/spotifyd:pulseaudio - Enables the pulseaudio backend
 media-sound/spotifyd:systemd - Installs a .service file to /etc/systemd/user/
 sys-kernel/clear-sources:experimental - Apply experimental patches; for more information, see "https://wiki.gentoo.org/wiki/Project:Kernel/Experimental".
-sys-kernel/xanmod-sources:cacule - Enable the CacULE CPU scheduler as a config option - EXPERIMENTAL!
+sys-kernel/xanmod-sources:cacule - Enable the CacULE CPU scheduler as a config option - EXPERIMENTAL and DEPRECATED!
 sys-kernel/xanmod-sources:experimental - Include "experimental" genpatches
 sys-kernel/xanmod-sources:tasktype - Enable the Task Type CPU scheduler, successor to CacULE, as a config option - EXPERIMENTAL!
 www-client/vimb:adblock - Use www-plugins/wyebadblock for ad blocking
