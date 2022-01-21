@@ -1,13 +1,14 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="96"
+K_GENPATCHES_VER="97"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 XANMOD_VERSION="1"
+_RT_VERSION="rt60"
 XANMOD_URI="https://github.com/xanmod/linux/releases/download/"
 
 HOMEPAGE="https://xanmod.org"
@@ -18,14 +19,18 @@ IUSE="experimental"
 inherit kernel-2
 detect_version
 
-DESCRIPTION="XanMod kernel sources, including the Gentoo patchset - LTS branch"
+# I hate myself.
+KV_FULL="${KV_FULL}-${_RT_VERSION}"
+S="${S}-${_RT_VERSION}"
+
+DESCRIPTION="XanMod kernel sources, including the PREEMPT_RT and Gentoo patchsets"
 SRC_URI="
 	${KERNEL_BASE_URI}/linux-${KV_MAJOR}.${KV_MINOR}.tar.xz
-	${XANMOD_URI}/${OKV}-xanmod${XANMOD_VERSION}/patch-${OKV}-xanmod${XANMOD_VERSION}.xz
+	${XANMOD_URI}/${OKV}-${_RT_VERSION}-xanmod${XANMOD_VERSION}/patch-${OKV}-${_RT_VERSION}-xanmod${XANMOD_VERSION}.xz
 	${GENPATCHES_URI}
 "
 
-UNIPATCH_LIST="${DISTDIR}/patch-${OKV}-xanmod${XANMOD_VERSION}.xz"
+UNIPATCH_LIST="${DISTDIR}/patch-${OKV}-${_RT_VERSION}-xanmod${XANMOD_VERSION}.xz"
 
 # excluding all minor kernel revision patches; XanMod will take care of that
 UNIPATCH_EXCLUDE="${UNIPATCH_EXCLUDE} 1*_linux-${KV_MAJOR}.${KV_MINOR}.*.patch"
