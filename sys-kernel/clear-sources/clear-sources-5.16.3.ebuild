@@ -1,12 +1,12 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="12"
-CLEAR_VER="${PV}-1109"
+K_GENPATCHES_VER="4"
+CLEAR_VER="${PV}-1118"
 
 inherit kernel-2
 detect_version
@@ -54,24 +54,19 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/mm-wakeups.patch
 	"${CLEAR_PATCHDIR}"/itmt2.patch
 	"${CLEAR_PATCHDIR}"/percpu-minsize.patch
-	"${CLEAR_PATCHDIR}"/0001-x86-sched-Decrease-further-the-priorities-of-SMT-sib.patch
-	"${CLEAR_PATCHDIR}"/0002-sched-topology-Introduce-sched_group-flags.patch
-	"${CLEAR_PATCHDIR}"/0003-sched-fair-Optimize-checking-for-group_asym_packing.patch
-	"${CLEAR_PATCHDIR}"/0004-sched-fair-Provide-update_sg_lb_stats-with-sched-dom.patch
-	"${CLEAR_PATCHDIR}"/0005-sched-fair-Carve-out-logic-to-mark-a-group-for-asymm.patch
-	"${CLEAR_PATCHDIR}"/0006-sched-fair-Consider-SMT-in-ASYM_PACKING-load-balance.patch
 "
 
 src_unpack() {
 	unpack "${CLEAR_VER}.tar.gz"
 	kernel-2_src_unpack
-	rm -rf "${CLEAR_PATCHDIR}" || die
+	tail +24 "${CLEAR_PATCHDIR}/config" > "${S}/arch/x86/configs/clear.config"
+	rm -rf "${CLEAR_PATCHDIR}"
 }
 
 pkg_postinst() {
 	kernel-2_pkg_postinst
-	einfo "For the default configuration used on Clear Linux, see:"
-	einfo "${HOMEPAGE}"
+	einfo "The default Clear Linux configuration is installed as a fragment."
+	einfo "If you want to use it, run \"make defconfig clear.config\"."
 }
 
 pkg_postrm() {
