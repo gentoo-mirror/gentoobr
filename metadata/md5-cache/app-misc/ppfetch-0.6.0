@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Info script written in Shell Script.
+EAPI=7
+HOMEPAGE=https://github.com/pedroportales/ppfetch
+KEYWORDS=~amd64 ~x86
+LICENSE=AGPL-3
+SLOT=0
+SRC_URI=https://github.com/pedroportales/ppfetch/archive/4268d3b.tar.gz -> ppfetch-0.6.0.tar.gz
+_md5_=8aa19204233ab84d88f31a6da7098ef6
