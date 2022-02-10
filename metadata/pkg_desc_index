@@ -6,7 +6,7 @@ media-sound/spotify-tui 0.24.0 0.25.0: A Spotify terminal client
 media-sound/spotifyd 0.3.2 0.3.3: A Spotify playing daemon
 net-misc/deemix-py 2.0.16 3.0.4 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
 sys-devel/llvm 13.0.1 14.0.0.9999: Low Level Virtual Machine
-sys-kernel/clear-sources 5.10.98 5.16.1 5.16.2 5.16.3 5.16.4 5.16.5 5.16.7: Clear Linux sources including Gentoo patchset for the 5.16 kernel tree
+sys-kernel/clear-sources 5.10.98 5.10.99 5.16.1 5.16.2 5.16.3 5.16.4 5.16.5 5.16.7 5.16.8: Clear Linux sources including Gentoo patchset for the 5.16 kernel tree
 sys-kernel/xanmod-sources 5.10.96 5.10.98 5.10.99 5.15.19 5.15.21 5.15.22 5.16.5 5.16.7 5.16.8: XanMod kernel sources, including the Gentoo patchset
 sys-kernel/xanmod-sources-rt 5.10.90 5.15.14: XanMod Kernel sources with PREEMPT_RT and the Gentoo patchsets
 sys-libs/polly 13.0.1 14.0.0.9999: Polyhedral optimizations for LLVM
