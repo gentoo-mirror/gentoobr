@@ -18,5 +18,6 @@ sys-kernel/clear-sources:experimental - Apply experimental patches; for more inf
 sys-kernel/xanmod-sources:experimental - Include "experimental" genpatches
 sys-kernel/xanmod-sources:tasktype - Enable the Task Type CPU scheduler, successor to CacULE, as a config option - EXPERIMENTAL!
 sys-kernel/xanmod-sources-rt:experimental - Include experimental (5000-5099) genpatches
+sys-kernel/xanmod-sources-rt:tasktype - Enable the TaskType CPU scheduler as a config option - Highly experimental!
 www-client/vimb:adblock - Use www-plugins/wyebadblock for ad blocking
 www-client/vimb:gstreamer - Add support for media-libs/gstreamer (Streaming media)
