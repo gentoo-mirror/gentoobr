@@ -5,22 +5,22 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="105"
-CLEAR_VER="${PV}-49"
+K_GENPATCHES_VER="14"
+CLEAR_VER="${PV}-1132"
 
 inherit kernel-2
 detect_version
 detect_arch
 
-KEYWORDS="amd64 x86"
-HOMEPAGE="https://github.com/clearlinux-pkgs/linux-lts2020"
+KEYWORDS="~amd64 ~x86"
+HOMEPAGE="https://github.com/clearlinux-pkgs/linux"
 IUSE="experimental"
 
 DESCRIPTION="Clear Linux sources including Gentoo patchset for the ${KV_MAJOR}.${KV_MINOR} kernel tree"
 
-CLEAR_URI="https://github.com/clearlinux-pkgs/linux-lts2020/archive/refs/tags/${CLEAR_VER}.tar.gz"
+CLEAR_URI="https://github.com/clearlinux-pkgs/linux/archive/refs/tags/${CLEAR_VER}.tar.gz"
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${CLEAR_URI}"
-CLEAR_PATCHDIR="${WORKDIR}/linux-lts2020-${CLEAR_VER}"
+CLEAR_PATCHDIR="${WORKDIR}/linux-${CLEAR_VER}"
 
 UNIPATCH_STRICTORDER=1
 UNIPATCH_LIST="
@@ -35,24 +35,26 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0109-initialize-ata-before-graphics.patch
 	"${CLEAR_PATCHDIR}"/0110-give-rdrand-some-credit.patch
 	"${CLEAR_PATCHDIR}"/0111-ipv4-tcp-allow-the-memory-tuning-for-tcp-to-go-a-lit.patch
-	"${CLEAR_PATCHDIR}"/0112-kernel-time-reduce-ntp-wakeups.patch
-	"${CLEAR_PATCHDIR}"/0113-init-wait-for-partition-and-retry-scan.patch
-	"${CLEAR_PATCHDIR}"/0114-print-fsync-count-for-bootchart.patch
-	"${CLEAR_PATCHDIR}"/0115-add-boot-option-to-allow-unsigned-modules.patch
-	"${CLEAR_PATCHDIR}"/0116-enable-stateless-firmware-loading.patch
-	"${CLEAR_PATCHDIR}"/0117-migrate-some-systemd-defaults-to-the-kernel-defaults.patch
-	"${CLEAR_PATCHDIR}"/0118-xattr-allow-setting-user.-attributes-on-symlinks-by-.patch
-	"${CLEAR_PATCHDIR}"/0119-add-scheduler-turbo3-patch.patch
-	"${CLEAR_PATCHDIR}"/0120-use-lfence-instead-of-rep-and-nop.patch
-	"${CLEAR_PATCHDIR}"/0121-do-accept-in-LIFO-order-for-cache-efficiency.patch
-	"${CLEAR_PATCHDIR}"/0122-locking-rwsem-spin-faster.patch
-	"${CLEAR_PATCHDIR}"/0123-ata-libahci-ignore-staggered-spin-up.patch
-	"${CLEAR_PATCHDIR}"/0124-print-CPU-that-faults.patch
-	"${CLEAR_PATCHDIR}"/0125-x86-microcode-Force-update-a-uCode-even-if-the-rev-i.patch
-	"${CLEAR_PATCHDIR}"/0126-x86-microcode-echo-2-reload-to-force-load-ucode.patch
-	"${CLEAR_PATCHDIR}"/0127-fix-bug-in-ucode-force-reload-revision-check.patch
-	"${CLEAR_PATCHDIR}"/0128-nvme-workaround.patch
-	"${CLEAR_PATCHDIR}"/0129-don-t-report-an-error-if-PowerClamp-run-on-other-CPU.patch
+	"${CLEAR_PATCHDIR}"/0112-init-wait-for-partition-and-retry-scan.patch
+	"${CLEAR_PATCHDIR}"/0114-add-boot-option-to-allow-unsigned-modules.patch
+	"${CLEAR_PATCHDIR}"/0115-enable-stateless-firmware-loading.patch
+	"${CLEAR_PATCHDIR}"/0116-migrate-some-systemd-defaults-to-the-kernel-defaults.patch
+	"${CLEAR_PATCHDIR}"/0117-xattr-allow-setting-user.-attributes-on-symlinks-by-.patch
+	"${CLEAR_PATCHDIR}"/0118-add-scheduler-turbo3-patch.patch
+	"${CLEAR_PATCHDIR}"/0119-use-lfence-instead-of-rep-and-nop.patch
+	"${CLEAR_PATCHDIR}"/0120-do-accept-in-LIFO-order-for-cache-efficiency.patch
+	"${CLEAR_PATCHDIR}"/0121-locking-rwsem-spin-faster.patch
+	"${CLEAR_PATCHDIR}"/0122-ata-libahci-ignore-staggered-spin-up.patch
+	"${CLEAR_PATCHDIR}"/0123-print-CPU-that-faults.patch
+	"${CLEAR_PATCHDIR}"/0124-x86-microcode-Force-update-a-uCode-even-if-the-rev-i.patch
+	"${CLEAR_PATCHDIR}"/0126-fix-bug-in-ucode-force-reload-revision-check.patch
+	"${CLEAR_PATCHDIR}"/0128-don-t-report-an-error-if-PowerClamp-run-on-other-CPU.patch
+	"${CLEAR_PATCHDIR}"/raid6.patch
+	"${CLEAR_PATCHDIR}"/itmt_epb.patch
+	"${CLEAR_PATCHDIR}"/mm-wakeups.patch
+	"${CLEAR_PATCHDIR}"/itmt2.patch
+	"${CLEAR_PATCHDIR}"/percpu-minsize.patch
+	"${CLEAR_PATCHDIR}"/prezero.patch
 "
 
 src_unpack() {
