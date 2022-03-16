@@ -7,13 +7,6 @@ media-sound/spotifyd:dbus - Enables multimedia key integration and keyring suppo
 media-sound/spotifyd:portaudio - Enables the pulseaudio backend
 media-sound/spotifyd:pulseaudio - Enables the pulseaudio backend
 media-sound/spotifyd:systemd - Installs a .service file to /etc/systemd/user/
-sys-devel/llvm:binutils-plugin - Build the binutils plugin
-sys-devel/llvm:doc - Build and install the HTML documentation and regenerate the man pages
-sys-devel/llvm:exegesis - Enable performance counter support for llvm-exegesis tool that can be used to measure host machine instruction characteristics
-sys-devel/llvm:ncurses - Support querying terminal properties using ncurses' terminfo
-sys-devel/llvm:polly - Add support for the LLVM framework for loop optimizations based on a polyhedral intermediate representation
-sys-devel/llvm:xar - Support dumping LLVM bitcode sections in Mach-O files (uses app-arch/xar)
-sys-devel/llvm:z3 - Enable support for sci-mathematics/z3 constraint solver
 sys-kernel/clear-sources:experimental - Apply experimental patches; for more information, see "https://wiki.gentoo.org/wiki/Project:Kernel/Experimental".
 sys-kernel/xanmod-sources:experimental - Include "experimental" genpatches
 sys-kernel/xanmod-sources:tasktype - Enable the Task Type CPU scheduler, successor to CacULE, as a config option - EXPERIMENTAL!
