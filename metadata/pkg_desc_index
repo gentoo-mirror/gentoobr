@@ -8,7 +8,7 @@ media-sound/spotifyd 0.3.2 0.3.3: A Spotify playing daemon
 net-misc/deemix-py 2.0.16 3.0.4 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
 sys-kernel/clear-sources 5.10.110-r1 5.10.112 5.10.113 5.16.18-r1 5.17.3 5.17.4: Clear Linux sources including Gentoo patchset for the 5.17 kernel tree
 sys-kernel/xanmod-sources 5.10.111 5.10.112 5.10.113 5.15.34 5.15.35 5.15.36 5.17.3 5.17.4 5.17.5: XanMod kernel sources, including the Gentoo patchset
-sys-kernel/xanmod-sources-rt 5.10.90 5.10.100 5.10.104 5.15.27 5.15.31 5.15.34: XanMod Kernel sources with PREEMPT_RT and the Gentoo patchsets
+sys-kernel/xanmod-sources-rt 5.10.90 5.10.100 5.10.104 5.15.31 5.15.34 5.15.36: XanMod Kernel sources with PREEMPT_RT and the Gentoo patchsets
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-plugins/wyebadblock 9999 20200506: An adblock extension for wyeb, also webkit2gtk browsers.
 x11-apps/sx 2.1.6 9999: Start an xorg server
