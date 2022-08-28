@@ -4,27 +4,33 @@
 EAPI="8"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="1"
+K_GENPATCHES_VER="140"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 XANMOD_VERSION="1"
+_RT_VERSION="rt72"
 XANMOD_URI="https://github.com/xanmod/linux/releases/download/"
 
 HOMEPAGE="https://xanmod.org"
 LICENSE+=" CDDL"
 KEYWORDS="~amd64"
+IUSE="+experimental"
 
 inherit kernel-2
 detect_version
 
-DESCRIPTION="XanMod kernel sources, including the Gentoo patchset"
+# I hate myself.
+KV_FULL="${KV_FULL}-${_RT_VERSION}"
+S="${S}-${_RT_VERSION}"
+
+DESCRIPTION="XanMod kernel sources, including the PREEMPT_RT and Gentoo patchsets"
 SRC_URI="
 	${KERNEL_BASE_URI}/linux-${KV_MAJOR}.${KV_MINOR}.tar.xz
-	${XANMOD_URI}/${OKV}-xanmod${XANMOD_VERSION}/patch-${OKV}-xanmod${XANMOD_VERSION}.xz
-	${GENPATCHES_URI}"
-IUSE="+experimental"
+	${XANMOD_URI}/${OKV}-${_RT_VERSION}-xanmod${XANMOD_VERSION}/patch-${OKV}-${_RT_VERSION}-xanmod${XANMOD_VERSION}.xz
+	${GENPATCHES_URI}
+"
 
-UNIPATCH_LIST+="${DISTDIR}/patch-${OKV}-xanmod${XANMOD_VERSION}.xz "
+UNIPATCH_LIST="${DISTDIR}/patch-${OKV}-${_RT_VERSION}-xanmod${XANMOD_VERSION}.xz"
 
 # excluding all minor kernel revision patches; XanMod will take care of that
 UNIPATCH_EXCLUDE="${UNIPATCH_EXCLUDE} 1*_linux-${KV_MAJOR}.${KV_MINOR}.*.patch"
@@ -33,7 +39,12 @@ UNIPATCH_EXCLUDE="${UNIPATCH_EXCLUDE} 1*_linux-${KV_MAJOR}.${KV_MINOR}.*.patch"
 UNIPATCH_EXCLUDE="${UNIPATCH_EXCLUDE} 5*_*cpu-optimization*.patch"
 
 pkg_postinst() {
-	elog "The XanMod team strongly suggests the use of updated CPU microcodes with its"
-	elog "kernels. For details, see https://wiki.gentoo.org/wiki/Microcode ."
+	elog "The XanMod team strongly suggests the use of updated CPU microcodes"
+	elog "with its kernels. For details: see:"
+	elog "https://wiki.gentoo.org/wiki/Microcode"
 	kernel-2_pkg_postinst
+}
+
+pkg_postrm() {
+	kernel-2_pkg_postrm
 }
