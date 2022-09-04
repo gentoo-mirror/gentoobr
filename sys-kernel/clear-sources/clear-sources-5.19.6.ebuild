@@ -5,8 +5,8 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="5"
-CLEAR_VER="${PV}-1180"
+K_GENPATCHES_VER="8"
+CLEAR_VER="${PV}-1185"
 
 inherit kernel-2
 detect_version
@@ -40,7 +40,6 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0115-enable-stateless-firmware-loading.patch
 	"${CLEAR_PATCHDIR}"/0116-migrate-some-systemd-defaults-to-the-kernel-defaults.patch
 	"${CLEAR_PATCHDIR}"/0117-xattr-allow-setting-user.-attributes-on-symlinks-by-.patch
-	"${CLEAR_PATCHDIR}"/0118-add-scheduler-turbo3-patch.patch
 	"${CLEAR_PATCHDIR}"/0119-use-lfence-instead-of-rep-and-nop.patch
 	"${CLEAR_PATCHDIR}"/0120-do-accept-in-LIFO-order-for-cache-efficiency.patch
 	"${CLEAR_PATCHDIR}"/0121-locking-rwsem-spin-faster.patch
@@ -58,6 +57,36 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/libsgrowdown.patch
 	"${CLEAR_PATCHDIR}"/kdf-boottime.patch
 	"${CLEAR_PATCHDIR}"/adlrdt.patch
+	"${CLEAR_PATCHDIR}"/0001-sched-numa-Initialise-numa_migrate_retry.patch
+	"${CLEAR_PATCHDIR}"/0002-sched-numa-Do-not-swap-tasks-between-nodes-when-spar.patch
+	"${CLEAR_PATCHDIR}"/0003-sched-numa-Apply-imbalance-limitations-consistently.patch
+	"${CLEAR_PATCHDIR}"/0004-sched-numa-Adjust-imb_numa_nr-to-a-better-approximat.patch
+	"${CLEAR_PATCHDIR}"/0005-sched-fair-Consider-CPU-affinity-when-allowing-NUMA-.patch
+	"${CLEAR_PATCHDIR}"/0006-sched-fair-Optimize-and-simplify-rq-leaf_cfs_rq_list.patch
+	"${CLEAR_PATCHDIR}"/0007-sched-deadline-Use-proc_douintvec_minmax-limit-minim.patch
+	"${CLEAR_PATCHDIR}"/0008-sched-Allow-newidle-balancing-to-bail-out-of-load_ba.patch
+	"${CLEAR_PATCHDIR}"/0011-selftests-rseq-riscv-use-rseq_get_abi-helper.patch
+	"${CLEAR_PATCHDIR}"/0012-selftests-rseq-riscv-fix-literal-suffix-warning.patch
+	"${CLEAR_PATCHDIR}"/0013-selftests-rseq-check-if-libc-rseq-support-is-registe.patch
+	"${CLEAR_PATCHDIR}"/0014-sched-fair-Remove-redundant-word.patch
+	"${CLEAR_PATCHDIR}"/0015-sched-Remove-unused-function-group_first_cpu.patch
+	"${CLEAR_PATCHDIR}"/0018-sched-fair-Provide-u64-read-for-32-bits-arch-helper.patch
+	"${CLEAR_PATCHDIR}"/0019-sched-fair-Decay-task-PELT-values-during-wakeup-migr.patch
+	"${CLEAR_PATCHDIR}"/0020-sched-drivers-Remove-max-param-from-effective_cpu_ut.patch
+	"${CLEAR_PATCHDIR}"/0021-sched-fair-Rename-select_idle_mask-to-select_rq_mask.patch
+	"${CLEAR_PATCHDIR}"/0022-sched-fair-Use-the-same-cpumask-per-PD-throughout-fi.patch
+	"${CLEAR_PATCHDIR}"/0023-sched-fair-Remove-task_util-from-effective-utilizati.patch
+	"${CLEAR_PATCHDIR}"/0024-sched-fair-Remove-the-energy-margin-in-feec.patch
+	"${CLEAR_PATCHDIR}"/0025-sched-core-add-forced-idle-accounting-for-cgroups.patch
+	"${CLEAR_PATCHDIR}"/0026-sched-core-Use-try_cmpxchg-in-set_nr_-and_not-if-_po.patch
+	"${CLEAR_PATCHDIR}"/0030-sched-core-Fix-the-bug-that-task-won-t-enqueue-into-.patch
+	"${CLEAR_PATCHDIR}"/0031-rseq-Deprecate-RSEQ_CS_FLAG_NO_RESTART_ON_-flags.patch
+	"${CLEAR_PATCHDIR}"/0032-rseq-Kill-process-when-unknown-flags-are-encountered.patch
+	"${CLEAR_PATCHDIR}"/0002-exit-Fix-typo-in-comment-s-sub-theads-sub-threads.patch
+	"${CLEAR_PATCHDIR}"/0003-sched-rt-Fix-Sparse-warnings-due-to-undefined-rt.c-d.patch
+	"${CLEAR_PATCHDIR}"/sched-hybrid1.patch
+	"${CLEAR_PATCHDIR}"/sched-hybrid3.patch
+	"${CLEAR_PATCHDIR}"/sched-hybrid4.patch
 "
 
 src_unpack() {
