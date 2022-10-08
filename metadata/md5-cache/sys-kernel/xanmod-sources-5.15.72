@@ -9,7 +9,7 @@ KEYWORDS=~amd64
 LICENSE=CDDL
 RDEPEND=!build? ( app-arch/cpio dev-lang/perl sys-devel/bc sys-devel/bison sys-devel/flex sys-devel/make >=sys-libs/ncurses-5.2 virtual/libelf virtual/pkgconfig )
 RESTRICT=binchecks strip
-SLOT=5.15.63
-SRC_URI=https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.tar.xz https://github.com/xanmod/linux/releases/download//5.15.63-xanmod1/patch-5.15.63-xanmod1.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.15-67.base.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.15-67.base.tar.xz https://dev.gentoo.org/~whissi/dist/genpatches/genpatches-5.15-67.base.tar.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.15-67.extras.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.15-67.extras.tar.xz https://dev.gentoo.org/~whissi/dist/genpatches/genpatches-5.15-67.extras.tar.xz
+SLOT=5.15.72
+SRC_URI=https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.tar.xz https://github.com/xanmod/linux/releases/download//5.15.72-xanmod1/patch-5.15.72-xanmod1.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.15-76.base.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.15-76.base.tar.xz https://dev.gentoo.org/~whissi/dist/genpatches/genpatches-5.15-76.base.tar.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.15-76.extras.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.15-76.extras.tar.xz https://dev.gentoo.org/~whissi/dist/genpatches/genpatches-5.15-76.extras.tar.xz
 _eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	kernel-2	aa8997cf13a12b867c4c8c57383b8582
-_md5_=89785b0dc02befd7d4081ae7b37c3175
+_md5_=5b651c1633faad349c3dee5c423a60a5
