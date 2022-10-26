@@ -5,8 +5,8 @@ EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="219"
-CLEAR_VER="${PV}-196"
+K_GENPATCHES_VER="224"
+CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
 detect_version
