@@ -8,7 +8,7 @@ media-sound/jamesdsp 9999: Open-source sound effects for PipeWire and PulseAudio
 media-sound/spotify-tui 0.24.0 0.25.0: A Spotify terminal client
 media-sound/spotifyd 0.3.2 0.3.3: A Spotify playing daemon
 net-misc/deemix-py 2.0.16 3.0.4 9999: deemix is a deezer downloader built from the ashes of Deezloader Remix.
-sys-kernel/clear-sources 4.14.290 4.14.291 4.14.292 4.14.293 4.14.294 4.14.295 4.14.295_p210 5.4.209 5.4.210 5.4.211 5.4.212 5.4.213 5.4.214 5.4.215 5.4.216 5.4.218_p200 5.10.138 5.10.139 5.10.140 5.10.142 5.10.143 5.10.144 5.10.146 5.10.147 5.10.148_p80 5.19.4-r1 5.19.5 5.19.6 5.19.8 5.19.9 5.19.10 5.19.12 6.0.0 6.0.2_p1201: Clear Linux sources including Gentoo patchset for the 6.0 kernel tree
+sys-kernel/clear-sources 4.14.294 4.14.295 4.14.295_p210 5.4.215 5.4.216 5.4.218_p200 5.4.219_p201 5.10.146 5.10.147 5.10.148_p80 5.10.149_p81 5.19.9 5.19.10 5.19.12 6.0.0 6.0.2_p1201 6.0.3_p1202: Clear Linux sources including Gentoo patchset for the 6.0 kernel tree
 sys-kernel/xanmod-sources 5.15.64 5.15.65 5.15.72 5.19.12 5.19.14 5.19.15 6.0.1 6.0.2 6.0.3: Latest XanMod kernel sources, including the Gentoo patchset
 sys-kernel/xanmod-sources-rt 5.10.104 5.10.115 5.10.131 5.15.43 5.15.44 5.15.55 6.0.2: XanMod Kernel sources with PREEMPT_RT and the Gentoo patchsets
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
