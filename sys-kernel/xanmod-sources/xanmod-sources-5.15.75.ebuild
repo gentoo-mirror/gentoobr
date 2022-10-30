@@ -4,7 +4,7 @@
 EAPI="8"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="2"
+K_GENPATCHES_VER="79"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 XANMOD_VERSION="1"
@@ -17,16 +17,19 @@ KEYWORDS="~amd64"
 inherit kernel-2
 detect_version
 
-DESCRIPTION="Latest XanMod kernel sources, including the Gentoo patchset"
+DESCRIPTION="XanMod Kernel sources including the Gentoo patchset - LTS branch"
 SRC_URI="
 	${KERNEL_BASE_URI}/linux-${KV_MAJOR}.${KV_MINOR}.tar.xz
 	${XANMOD_URI}/${OKV}-xanmod${XANMOD_VERSION}/patch-${OKV}-xanmod${XANMOD_VERSION}.xz
 	${GENPATCHES_URI}"
 
-UNIPATCH_LIST+="${DISTDIR}/patch-${OKV}-xanmod${XANMOD_VERSION}.xz "
-
 # excluding all minor kernel revision patches; XanMod will take care of that
 UNIPATCH_EXCLUDE="${UNIPATCH_EXCLUDE} 1*_linux-${KV_MAJOR}.${KV_MINOR}.*.patch"
+
+src_unpack() {
+	UNIPATCH_LIST+="${DISTDIR}/patch-${OKV}-xanmod${XANMOD_VERSION}.xz "
+	kernel-2_src_unpack
+}
 
 pkg_postinst() {
 	elog "The XanMod team strongly suggests the use of updated CPU microcodes with its"
