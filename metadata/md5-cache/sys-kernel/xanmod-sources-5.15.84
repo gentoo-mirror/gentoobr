@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
-DESCRIPTION=Latest XanMod kernel sources, including the Gentoo patchset
+DESCRIPTION=XanMod Kernel sources including the Gentoo patchset - LTS branch
 EAPI=8
 HOMEPAGE=https://www.kernel.org/ https://wiki.gentoo.org/wiki/Kernel https://xanmod.org
 INHERIT=kernel-2
@@ -8,7 +8,7 @@ KEYWORDS=~amd64
 LICENSE=CDDL
 RDEPEND=!build? ( app-arch/cpio dev-lang/perl sys-devel/bc sys-devel/bison sys-devel/flex sys-devel/make >=sys-libs/ncurses-5.2 virtual/libelf virtual/pkgconfig )
 RESTRICT=binchecks strip
-SLOT=5.19.12
-SRC_URI=https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.19.tar.xz https://github.com/xanmod/linux/releases/download//5.19.12-xanmod1/patch-5.19.12-xanmod1.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.19-14.base.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.19-14.base.tar.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.19-14.extras.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.19-14.extras.tar.xz
+SLOT=5.15.84
+SRC_URI=https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.tar.xz https://github.com/xanmod/linux/releases/download//5.15.84-xanmod1/patch-5.15.84-xanmod1.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.15-88.base.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.15-88.base.tar.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-5.15-88.extras.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-5.15-88.extras.tar.xz
 _eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	kernel-2	251644d091f08784e34abea7495fc883
-_md5_=5b1eda64f5882175ddbb169c0a7aec3c
+_md5_=740a09d5234c986e912f2b6b3f8f0588
