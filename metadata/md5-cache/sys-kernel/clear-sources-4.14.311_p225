@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
+DESCRIPTION=Clear Linux sources including Gentoo patchset for the 4.14 kernel tree
+EAPI=8
+HOMEPAGE=https://github.com/clearlinux-pkgs/linux-lts2017
+INHERIT=kernel-2
+IUSE=experimental symlink build
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=!build? ( app-arch/cpio dev-lang/perl sys-devel/bc sys-devel/bison sys-devel/flex sys-devel/make >=sys-libs/ncurses-5.2 virtual/libelf virtual/pkgconfig )
+RESTRICT=binchecks strip
+SLOT=4.14.311_p225
+SRC_URI=https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.14.tar.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-4.14-322.base.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-4.14-322.base.tar.xz https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-4.14-322.extras.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-4.14-322.extras.tar.xz experimental? ( https://dev.gentoo.org/~alicef/dist/genpatches/genpatches-4.14-322.experimental.tar.xz https://dev.gentoo.org/~mpagano/dist/genpatches/genpatches-4.14-322.experimental.tar.xz ) https://github.com/clearlinux-pkgs/linux-lts2017/archive/refs/tags/4.14.311-225.tar.gz
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	kernel-2	5ec69098eb726d07eec2cf05ce4fbdfe
+_md5_=f50b3baf22953ac62fc10fbfe385da6e
