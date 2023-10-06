@@ -1,11 +1,11 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="168"
+K_GENPATCHES_VER="207"
 CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
@@ -48,7 +48,6 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0123-ata-libahci-ignore-staggered-spin-up.patch
 	"${CLEAR_PATCHDIR}"/0124-print-CPU-that-faults.patch
 	"${CLEAR_PATCHDIR}"/0125-x86-microcode-Force-update-a-uCode-even-if-the-rev-i.patch
-	"${CLEAR_PATCHDIR}"/0126-x86-microcode-echo-2-reload-to-force-load-ucode.patch
 	"${CLEAR_PATCHDIR}"/0127-fix-bug-in-ucode-force-reload-revision-check.patch
 	"${CLEAR_PATCHDIR}"/0128-nvme-workaround.patch
 	"${CLEAR_PATCHDIR}"/0129-don-t-report-an-error-if-PowerClamp-run-on-other-CPU.patch
