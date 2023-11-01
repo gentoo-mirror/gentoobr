@@ -1,0 +1,9 @@
+DEFINED_PHASES=-
+DESCRIPTION=A case-insensitive filesystem using FUSE
+EAPI=8
+KEYWORDS=~amd64
+RDEPEND=sys-fs/fuse
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/BGazotti/cicpoffs/archive/refs/heads/master.zip -> cicpoffs-9999.zip
+_md5_=b69bdd91fa43a17e42eb1191742932b4
