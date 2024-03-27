@@ -5,11 +5,11 @@ EAPI="8"
 ETYPE="sources"
 
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="13"
+K_GENPATCHES_VER="29"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 
-XANMOD_CHANNEL="main"
+XANMOD_CHANNEL="lts"
 XANMOD_VERSION="1"
 XANMOD_URI="https://master.dl.sourceforge.net/project/xanmod/releases/${XANMOD_CHANNEL}"
 
@@ -26,6 +26,7 @@ SRC_URI="
 	${XANMOD_URI}/${OKV}-xanmod${XANMOD_VERSION}/${_xanpatchfile} -> 1509_${_xanpatchfile}
 	${GENPATCHES_URI}"
 LICENSE+=" CDDL"
+SLOT="lts"
 KEYWORDS="~amd64"
 RESTRICT="mirror"
 
