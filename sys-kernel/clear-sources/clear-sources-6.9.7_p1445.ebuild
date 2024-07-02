@@ -1,25 +1,23 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
-K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="9"
+K_GENPATCHES_VER="8"
 CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
 detect_version
 detect_arch
 
-KEYWORDS="~amd64 ~x86"
-HOMEPAGE="https://github.com/clearlinux-pkgs/linux"
-IUSE="experimental"
-
 DESCRIPTION="Clear Linux sources including Gentoo patchset for the ${KV_MAJOR}.${KV_MINOR} kernel tree"
-
+HOMEPAGE="https://github.com/clearlinux-pkgs/linux"
 CLEAR_URI="https://github.com/clearlinux-pkgs/linux/archive/refs/tags/${CLEAR_VER}.tar.gz"
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${CLEAR_URI}"
+KEYWORDS="~amd64 ~x86"
+IUSE="experimental"
+
 CLEAR_PATCHDIR="${WORKDIR}/linux-${CLEAR_VER}"
 
 UNIPATCH_STRICTORDER=1
@@ -28,9 +26,7 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0102-increase-the-ext4-default-commit-age.patch
 	"${CLEAR_PATCHDIR}"/0104-pci-pme-wakeups.patch
 	"${CLEAR_PATCHDIR}"/0106-intel_idle-tweak-cpuidle-cstates.patch
-	"${CLEAR_PATCHDIR}"/0107-bootstats-add-printk-s-to-measure-boot-time-in-more-.patch
 	"${CLEAR_PATCHDIR}"/0108-smpboot-reuse-timer-calibration.patch
-	"${CLEAR_PATCHDIR}"/0109-initialize-ata-before-graphics.patch
 	"${CLEAR_PATCHDIR}"/0111-ipv4-tcp-allow-the-memory-tuning-for-tcp-to-go-a-lit.patch
 	"${CLEAR_PATCHDIR}"/0112-init-wait-for-partition-and-retry-scan.patch
 	"${CLEAR_PATCHDIR}"/0114-add-boot-option-to-allow-unsigned-modules.patch
@@ -50,16 +46,8 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0133-novector.patch
 	"${CLEAR_PATCHDIR}"/0134-md-raid6-algorithms-scale-test-duration-for-speedier.patch
 	"${CLEAR_PATCHDIR}"/0135-initcall-only-print-non-zero-initcall-debug-to-speed.patch
-	"${CLEAR_PATCHDIR}"/scale.patch
 	"${CLEAR_PATCHDIR}"/libsgrowdown.patch
-	"${CLEAR_PATCHDIR}"/adlrdt.patch
 	"${CLEAR_PATCHDIR}"/epp-retune.patch
-	"${CLEAR_PATCHDIR}"/tcptuning.patch
-	"${CLEAR_PATCHDIR}"/0001-powerbump-functionality.patch
-	"${CLEAR_PATCHDIR}"/0002-add-networking-support-for-powerbump.patch
-	"${CLEAR_PATCHDIR}"/0003-futex-bump.patch
-	"${CLEAR_PATCHDIR}"/0001-add-umonitor-umwait-C0.x-C-states.patch
-	"${CLEAR_PATCHDIR}"/0001-mm-memcontrol-add-some-branch-hints-based-on-gcov-an.patch
 	"${CLEAR_PATCHDIR}"/0002-sched-core-add-some-branch-hints-based-on-gcov-analy.patch
 	"${CLEAR_PATCHDIR}"/0136-crypto-kdf-make-the-module-init-call-a-late-init-cal.patch
 	"${CLEAR_PATCHDIR}"/ratelimit-sched-yield.patch
@@ -67,11 +55,11 @@ UNIPATCH_LIST="
 	"${CLEAR_PATCHDIR}"/0158-clocksource-only-perform-extended-clocksource-checks.patch
 	"${CLEAR_PATCHDIR}"/better_idle_balance.patch
 	"${CLEAR_PATCHDIR}"/0161-ACPI-align-slab-buffers-for-improved-memory-performa.patch
-	"${CLEAR_PATCHDIR}"/0162-extra-optmization-flags.patch
 	"${CLEAR_PATCHDIR}"/0163-thermal-intel-powerclamp-check-MWAIT-first-use-pr_wa.patch
 	"${CLEAR_PATCHDIR}"/0164-KVM-VMX-make-vmx-init-a-late-init-call-to-get-to-ini.patch
-	"${CLEAR_PATCHDIR}"/0001-sched-migrate.patch
-	"${CLEAR_PATCHDIR}"/0002-sched-migrate.patch
+	"${CLEAR_PATCHDIR}"/slack.patch
+	"${CLEAR_PATCHDIR}"/0166-sched-fair-remove-upper-limit-on-cpu-number.patch
+	"${CLEAR_PATCHDIR}"/0167-net-sock-increase-default-number-of-_SK_MEM_PACKETS-.patch
 "
 
 src_unpack() {

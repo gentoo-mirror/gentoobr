@@ -4,7 +4,7 @@
 EAPI="8"
 ETYPE="sources"
 K_SECURITY_UNSUPPORTED="1"
-K_GENPATCHES_VER="100"
+K_GENPATCHES_VER="105"
 CLEAR_VER="${PV/_p/-}"
 
 inherit kernel-2
