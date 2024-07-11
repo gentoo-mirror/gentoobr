@@ -10,5 +10,5 @@ LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=gstreamer? ( net-libs/webkit-gtk[gstreamer] media-libs/gst-plugins-good media-plugins/gst-plugins-libav ) !gstreamer? ( net-libs/webkit-gtk ) x11-libs/gtk+:3 adblock? ( www-plugins/wyebadblock )
 SLOT=0
-_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	portability	225656ad6c6594fe3b0187bdd50707fb	savedconfig	8b5f9d995a970e49cd427c55d5840285	git-r3	fbb2889c81f3a05910c1524db69425c1
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	portability	225656ad6c6594fe3b0187bdd50707fb	savedconfig	8b5f9d995a970e49cd427c55d5840285	git-r3	875eb471682d3e1f18da124be97dcc81
 _md5_=cad3afc31dbbdb592e9cee6621170990
