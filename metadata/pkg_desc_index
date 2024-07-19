@@ -1,6 +1,7 @@
 app-misc/Redfetch 0.1.3: A fast fetch written in C, with the ppfetch Ascii Art.
 app-misc/ppfetch 1.0.0 9999: Info script written in Shell Script.
 app-text/smu 1.5 9999: simple markup - markdown like syntax
+gui-apps/sfwbar 9999: S* Floating Window Bar
 gui-wm/hyprland 0.12.0: Dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 media-sound/jamesdsp 9999: Open-source sound effects for PipeWire and PulseAudio
 media-sound/librespot 9999: An open source client library for Spotify, with support for Spotify Connect
