@@ -10,5 +10,5 @@ LICENSE=GPL-3
 RDEPEND=gstreamer? ( net-libs/webkit-gtk[gstreamer] media-libs/gst-plugins-good media-plugins/gst-plugins-libav ) !gstreamer? ( net-libs/webkit-gtk ) x11-libs/gtk+:3 adblock? ( www-plugins/wyebadblock )
 SLOT=0
 SRC_URI=https://github.com/fanglingsu/vimb/archive/3.6.0.tar.gz -> vimb-3.6.0.tar.gz
-_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	portability	225656ad6c6594fe3b0187bdd50707fb	savedconfig	b9131abe556ad2ea96c01b06d658d363
+_eclasses_=desktop	56973babb9c5f19cab0eeb53ece644c6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	portability	01f478fa22185b3606f2d4adea4675ed	savedconfig	b9131abe556ad2ea96c01b06d658d363
 _md5_=cad3afc31dbbdb592e9cee6621170990
